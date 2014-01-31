@@ -1,0 +1,6 @@
+verilog work "DRAP_shiftleft2.v"
+verilog work "DRAP_shiftl2.v"
+verilog work "DRAP_PC.v"
+verilog work "DRAP_mux2to1.v"
+verilog work "DRAP_IFETCH_ADDER.v"
+verilog work "DRAP_Ifetch.v"

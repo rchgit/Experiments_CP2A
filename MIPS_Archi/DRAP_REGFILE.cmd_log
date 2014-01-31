@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/Reich/Documents/DLSU ACAD FOLDER/TERM 9/LBYCP2A/MIPS_Archi/DRAP_REGFILE.xst" -ofn "C:/Users/Reich/Documents/DLSU ACAD FOLDER/TERM 9/LBYCP2A/MIPS_Archi/DRAP_REGFILE.syr" 
+vhdtdtfi -lang verilog -prj MIPS_Archi -o "C:/Users/Reich/Documents/DLSU ACAD FOLDER/TERM 9/LBYCP2A/MIPS_Archi/DRAP_REGFILE.tfi" -lib work "C:/Users/Reich/Documents/DLSU ACAD FOLDER/TERM 9/LBYCP2A/MIPS_Archi//DRAP_REGFILE.v" -module DRAP_REGFILE -template C:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim DRAP_REGFILE.ngc DRAP_REGFILE_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "DRAP_REGFILE.ngc" DRAP_REGFILE.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DRAP_REGFILE_map.ncd DRAP_REGFILE.ngd DRAP_REGFILE.pcf 
+par -w -intstyle ise -ol high -t 1 DRAP_REGFILE_map.ncd DRAP_REGFILE.ncd DRAP_REGFILE.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DRAP_REGFILE.twx DRAP_REGFILE.ncd -o DRAP_REGFILE.twr DRAP_REGFILE.pcf 
+xst -intstyle ise -ifn "C:/Users/Reich/Documents/DLSU ACAD FOLDER/TERM 9/LBYCP2A/MIPS_Archi/DRAP_REGFILE.xst" -ofn "C:/Users/Reich/Documents/DLSU ACAD FOLDER/TERM 9/LBYCP2A/MIPS_Archi/DRAP_REGFILE.syr" 

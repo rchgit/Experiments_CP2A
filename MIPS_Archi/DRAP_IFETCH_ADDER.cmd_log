@@ -1,0 +1,3 @@
+vhdtdtfi -lib work {C:/LBYCP2A EQ1/MIPS_Archi/DRAP_IFETCH_ADDER.v} -lang verilog -prj MIPS_Archi -o DRAP_IFETCH_ADDER.spl -module DRAP_IFETCH_ADDER -template C:/Xilinx/12.3/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e DRAP_IFETCH_ADDER.spl {C:/LBYCP2A EQ1/MIPS_Archi/DRAP_IFETCH_ADDER.sym} 
+xst -intstyle ise -ifn "C:/LBYCP2A EQ1/MIPS_Archi/DRAP_IFETCH_ADDER.xst" -ofn "C:/LBYCP2A EQ1/MIPS_Archi/DRAP_IFETCH_ADDER.syr" 

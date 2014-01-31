@@ -1,0 +1,17 @@
+
+
+
+// Instantiate the module
+DRAP_REGFILE instance_name (
+    .clk(clk), 
+    .rst(rst), 
+    .wr_en(wr_en), 
+    .r_addr1(r_addr1), 
+    .r_addr2(r_addr2), 
+    .w_addr(w_addr), 
+    .w_data(w_data), 
+    .r_data1(r_data1), 
+    .r_data2(r_data2)
+    );
+
+

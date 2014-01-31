@@ -1,0 +1,500 @@
+Release 12.3 - xst M.70d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: DRAP_Ifetch.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DRAP_Ifetch.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DRAP_Ifetch"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : DRAP_Ifetch
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "DRAP_shiftleft2.v" in library work
+Compiling verilog file "DRAP_shiftl2.v" in library work
+Module <Ifetch_sh2> compiled
+Compiling verilog file "DRAP_PC.v" in library work
+Module <DRAP_shiftl2> compiled
+Compiling verilog file "DRAP_mux2to1.v" in library work
+Module <DRAP_PC> compiled
+Compiling verilog file "DRAP_IFETCH_ADDER.v" in library work
+Module <Ifetch_mux1> compiled
+Compiling verilog file "DRAP_Ifetch.v" in library work
+Module <DRAP_IFETCH_ADDER> compiled
+Module <DRAP_Ifetch> compiled
+No errors in compilation
+Analysis of file <"DRAP_Ifetch.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <DRAP_Ifetch> in library <work>.
+
+Analyzing hierarchy for module <DRAP_PC> in library <work> with parameters.
+	B = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <DRAP_IFETCH_ADDER> in library <work> with parameters.
+	B = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <DRAP_shiftl2> in library <work>.
+
+Analyzing hierarchy for module <Ifetch_mux1> in library <work> with parameters.
+	B = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <Ifetch_sh2> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <DRAP_Ifetch>.
+Module <DRAP_Ifetch> is correct for synthesis.
+ 
+Analyzing module <DRAP_PC> in library <work>.
+	B = 32'sb00000000000000000000000000100000
+Module <DRAP_PC> is correct for synthesis.
+ 
+Analyzing module <DRAP_IFETCH_ADDER> in library <work>.
+	B = 32'sb00000000000000000000000000100000
+Module <DRAP_IFETCH_ADDER> is correct for synthesis.
+ 
+Analyzing module <DRAP_shiftl2> in library <work>.
+Module <DRAP_shiftl2> is correct for synthesis.
+ 
+Analyzing module <Ifetch_mux1> in library <work>.
+	B = 32'sb00000000000000000000000000100000
+Module <Ifetch_mux1> is correct for synthesis.
+ 
+Analyzing module <Ifetch_sh2> in library <work>.
+Module <Ifetch_sh2> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <DRAP_PC>.
+    Related source file is "DRAP_PC.v".
+    Found 32-bit register for signal <tmp>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <DRAP_PC> synthesized.
+
+
+Synthesizing Unit <DRAP_IFETCH_ADDER>.
+    Related source file is "DRAP_IFETCH_ADDER.v".
+    Found 32-bit adder for signal <sum>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <DRAP_IFETCH_ADDER> synthesized.
+
+
+Synthesizing Unit <DRAP_shiftl2>.
+    Related source file is "DRAP_shiftl2.v".
+Unit <DRAP_shiftl2> synthesized.
+
+
+Synthesizing Unit <Ifetch_mux1>.
+    Related source file is "DRAP_mux2to1.v".
+Unit <Ifetch_mux1> synthesized.
+
+
+Synthesizing Unit <Ifetch_sh2>.
+    Related source file is "DRAP_shiftleft2.v".
+Unit <Ifetch_sh2> synthesized.
+
+
+Synthesizing Unit <DRAP_Ifetch>.
+    Related source file is "DRAP_Ifetch.v".
+Unit <DRAP_Ifetch> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Registers                                            : 1
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <DRAP_Ifetch> ...
+
+Optimizing unit <DRAP_PC> ...
+WARNING:Xst:1710 - FF/Latch <M1/tmp_1> (without init value) has a constant value of 0 in block <DRAP_Ifetch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M1/tmp_0> (without init value) has a constant value of 0 in block <DRAP_Ifetch>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DRAP_Ifetch, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : DRAP_Ifetch.ngr
+Top Level Output File Name         : DRAP_Ifetch
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 93
+
+Cell Usage :
+# BELS                             : 327
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 29
+#      LUT2                        : 66
+#      LUT3                        : 23
+#      LUT4                        : 44
+#      MUXCY                       : 58
+#      MUXF5                       : 44
+#      VCC                         : 1
+#      XORCY                       : 60
+# FlipFlops/Latches                : 30
+#      FDC                         : 30
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 92
+#      IBUF                        : 60
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       88  out of   4656     1%  
+ Number of Slice Flip Flops:             30  out of   9312     0%  
+ Number of 4 input LUTs:                163  out of   9312     1%  
+ Number of IOs:                          93
+ Number of bonded IOBs:                  93  out of    232    40%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 30    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 30    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.768ns (Maximum Frequency: 114.051MHz)
+   Minimum input arrival time before clock: 6.904ns
+   Maximum output required time after clock: 4.310ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.768ns (frequency: 114.051MHz)
+  Total number of paths / destination ports: 10235 / 30
+-------------------------------------------------------------------------
+Delay:               8.768ns (Levels of Logic = 33)
+  Source:            M1/tmp_3 (FF)
+  Destination:       M1/tmp_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: M1/tmp_3 to M1/tmp_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  M1/tmp_3 (M1/tmp_3)
+     LUT1:I0->O            1   0.704   0.000  M2/Madd_sum_cy<3>_rt (M2/Madd_sum_cy<3>_rt)
+     MUXCY:S->O            1   0.464   0.000  M2/Madd_sum_cy<3> (M2/Madd_sum_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<4> (M2/Madd_sum_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<5> (M2/Madd_sum_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<6> (M2/Madd_sum_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<7> (M2/Madd_sum_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<8> (M2/Madd_sum_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<9> (M2/Madd_sum_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<10> (M2/Madd_sum_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<11> (M2/Madd_sum_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<12> (M2/Madd_sum_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<13> (M2/Madd_sum_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<14> (M2/Madd_sum_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<15> (M2/Madd_sum_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<16> (M2/Madd_sum_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<17> (M2/Madd_sum_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<18> (M2/Madd_sum_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<19> (M2/Madd_sum_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<20> (M2/Madd_sum_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<21> (M2/Madd_sum_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<22> (M2/Madd_sum_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<23> (M2/Madd_sum_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<24> (M2/Madd_sum_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<25> (M2/Madd_sum_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  M2/Madd_sum_cy<26> (M2/Madd_sum_cy<26>)
+     XORCY:CI->O           3   0.804   0.610  M2/Madd_sum_xor<27> (pcplus4<27>)
+     LUT2:I1->O            1   0.704   0.000  M4/Madd_sum_lut<27> (M4/Madd_sum_lut<27>)
+     MUXCY:S->O            1   0.464   0.000  M4/Madd_sum_cy<27> (M4/Madd_sum_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<28> (M4/Madd_sum_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<29> (M4/Madd_sum_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  M4/Madd_sum_cy<30> (M4/Madd_sum_cy<30>)
+     XORCY:CI->O           1   0.804   0.455  M4/Madd_sum_xor<31> (cond_br<31>)
+     LUT3:I2->O            1   0.704   0.000  M8/tmp<31>1 (tmp2<31>)
+     FDC:D                     0.308          M1/tmp_31
+    ----------------------------------------
+    Total                      8.768ns (7.081ns logic, 1.687ns route)
+                                       (80.8% logic, 19.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 725 / 30
+-------------------------------------------------------------------------
+Offset:              6.904ns (Levels of Logic = 33)
+  Source:            sign_ext_in<0> (PAD)
+  Destination:       M1/tmp_31 (FF)
+  Destination Clock: clk rising
+
+  Data Path: sign_ext_in<0> to M1/tmp_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.595  sign_ext_in_0_IBUF (sign_ext_in_0_IBUF)
+     LUT2:I0->O            1   0.704   0.000  M4/Madd_sum_lut<2> (M4/Madd_sum_lut<2>)
+     MUXCY:S->O            1   0.464   0.000  M4/Madd_sum_cy<2> (M4/Madd_sum_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<3> (M4/Madd_sum_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<4> (M4/Madd_sum_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<5> (M4/Madd_sum_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<6> (M4/Madd_sum_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<7> (M4/Madd_sum_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<8> (M4/Madd_sum_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<9> (M4/Madd_sum_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<10> (M4/Madd_sum_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<11> (M4/Madd_sum_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<12> (M4/Madd_sum_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<13> (M4/Madd_sum_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<14> (M4/Madd_sum_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<15> (M4/Madd_sum_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<16> (M4/Madd_sum_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<17> (M4/Madd_sum_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<18> (M4/Madd_sum_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<19> (M4/Madd_sum_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<20> (M4/Madd_sum_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<21> (M4/Madd_sum_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<22> (M4/Madd_sum_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<23> (M4/Madd_sum_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<24> (M4/Madd_sum_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<25> (M4/Madd_sum_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<26> (M4/Madd_sum_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<27> (M4/Madd_sum_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<28> (M4/Madd_sum_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  M4/Madd_sum_cy<29> (M4/Madd_sum_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  M4/Madd_sum_cy<30> (M4/Madd_sum_cy<30>)
+     XORCY:CI->O           1   0.804   0.455  M4/Madd_sum_xor<31> (cond_br<31>)
+     LUT3:I2->O            1   0.704   0.000  M8/tmp<31>1 (tmp2<31>)
+     FDC:D                     0.308          M1/tmp_31
+    ----------------------------------------
+    Total                      6.904ns (5.854ns logic, 1.050ns route)
+                                       (84.8% logic, 15.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 30 / 30
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            M1/tmp_31 (FF)
+  Destination:       PC_out<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: M1/tmp_31 to PC_out<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.447  M1/tmp_31 (M1/tmp_31)
+     OBUF:I->O                 3.272          PC_out_31_OBUF (PC_out<31>)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.70 secs
+ 
+--> 
+
+Total memory usage is 187052 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

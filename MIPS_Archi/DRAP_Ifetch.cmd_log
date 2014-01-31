@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/LBYCP2A EQ1/MIPS_Archi/DRAP_Ifetch.xst" -ofn "C:/LBYCP2A EQ1/MIPS_Archi/DRAP_Ifetch.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim DRAP_Ifetch.ngc DRAP_Ifetch_synthesis.v 
+xst -intstyle ise -ifn "C:/LBYCP2A EQ1/MIPS_Archi/DRAP_Ifetch.xst" -ofn "C:/LBYCP2A EQ1/MIPS_Archi/DRAP_Ifetch.syr" 
+xst -intstyle ise -ifn "C:/LBYCP2A EQ1/MIPS_Archi/DRAP_Ifetch.xst" -ofn "C:/LBYCP2A EQ1/MIPS_Archi/DRAP_Ifetch.syr" 
