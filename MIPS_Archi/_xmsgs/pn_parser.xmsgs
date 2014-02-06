@@ -8,25 +8,34 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/DLSU ACAD FOLDER/TERM 9/LBYCP2A/MIPS_Archi/DRAP_IFETCH_ADDER.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/DRAP_Dmemory.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/DLSU ACAD FOLDER/TERM 9/LBYCP2A/MIPS_Archi/DRAP_Ifetch.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/DRAP_IFETCH_ADDER.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/DLSU ACAD FOLDER/TERM 9/LBYCP2A/MIPS_Archi/DRAP_PC.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/DRAP_Ifetch.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/DLSU ACAD FOLDER/TERM 9/LBYCP2A/MIPS_Archi/DRAP_REGFILE.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/DRAP_Imemory.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/DLSU ACAD FOLDER/TERM 9/LBYCP2A/MIPS_Archi/DRAP_mux2to1.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/DRAP_Irom.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/DLSU ACAD FOLDER/TERM 9/LBYCP2A/MIPS_Archi/DRAP_shiftl2.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/DRAP_PC.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/DLSU ACAD FOLDER/TERM 9/LBYCP2A/MIPS_Archi/DRAP_shiftleft2.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/DRAP_REGFILE.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/DRAP_mux2to1.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/DRAP_shiftl2.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/DRAP_shiftleft2.v&quot; into library work</arg>
 </msg>
 
 </messages>
