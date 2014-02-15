@@ -8,6 +8,9 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/DRAP_ALI.v&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/DRAP_Dmemory.v&quot; into library work</arg>
 </msg>
 
@@ -36,6 +39,54 @@
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/DRAP_shiftleft2.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/alu_16bit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/alu_1bit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/alu_24bit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/alu_32bit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/alu_4bit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/alu_4bit_upper.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/alu_8bit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/alu_last_bit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/full_adder.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/mux2_1.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/mux4_1.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/tb_alu_1bit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/tb_alu_4bit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/tb_full_adder.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/tb_mux2_1.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/tb_mux4_1.v&quot; into library work</arg>
 </msg>
 
 </messages>
