@@ -5,13 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/alu_8bit.v" Line 30: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">sel0</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">4</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/alu_8bit.v" Line 31: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">sel0</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">4</arg>-bit.
-</msg>
-
-<msg type="warning" file="Simulator" num="0" delta="unknown" >Unable to copy libPortabilityNOSH.dll to the simulation executable directory: <arg fmt="%s" index="1">boost::filesystem::copy_file: The system cannot find the path specified, &quot;isim\alu_24bit_tb_isim_beh.exe.sim\libPortability.dll&quot;</arg>.
+<msg type="warning" file="Simulator" num="0" delta="unknown" >Unable to copy libPortabilityNOSH.dll to the simulation executable directory: <arg fmt="%s" index="1">boost::filesystem::copy_file: The system cannot find the path specified, &quot;isim\CLA_8bit_tb_isim_beh.exe.sim\libPortability.dll&quot;</arg>.
 </msg>
 
 </messages>

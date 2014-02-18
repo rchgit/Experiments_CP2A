@@ -23,6 +23,10 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CLA_4bit_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CLA_8bit_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CLA_8bit_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="CLA_8bit_tb_isim_beh.wdb"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="DRAP_IFETCH_ADDER_tb_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="DRAP_Ifetch_tb_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="DRAP_Imemory_isim_beh.exe"/>
@@ -72,13 +76,10 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="alu_24bit_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="alu_24bit_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="alu_24bit_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
     <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/DRAP_REGFILE_synthesis.nlf"/>
     <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="netgen/synthesis/DRAP_REGFILE_synthesis.v"/>
@@ -93,13 +94,17 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1391567269" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1391567269">
+    <transform xil_pn:end_ts="1392724369" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1392724368">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1392178012" xil_pn:in_ck="-3941320676471061275" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1392178011">
+    <transform xil_pn:end_ts="1392724455" xil_pn:in_ck="8025955416509140303" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1392724454">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CLA_4bit.v"/>
+      <outfile xil_pn:name="CLA_4bit_tb.v"/>
+      <outfile xil_pn:name="CLA_8bit.v"/>
+      <outfile xil_pn:name="CLA_8bit_tb.v"/>
       <outfile xil_pn:name="DRAP_ALI.v"/>
       <outfile xil_pn:name="DRAP_Dmemory.v"/>
       <outfile xil_pn:name="DRAP_Dmemory_tb.v"/>
@@ -138,21 +143,25 @@
       <outfile xil_pn:name="tb_mux2_1.v"/>
       <outfile xil_pn:name="tb_mux4_1.v"/>
     </transform>
-    <transform xil_pn:end_ts="1392178012" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1208000051893134702" xil_pn:start_ts="1392178012">
+    <transform xil_pn:end_ts="1392724373" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3426721602215122094" xil_pn:start_ts="1392724373">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1392178012" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-496347257184955564" xil_pn:start_ts="1392178012">
+    <transform xil_pn:end_ts="1392724373" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6526284742907735020" xil_pn:start_ts="1392724373">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1391567270" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="5909481160404578115" xil_pn:start_ts="1391567270">
+    <transform xil_pn:end_ts="1392724373" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="5909481160404578115" xil_pn:start_ts="1392724373">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1392178013" xil_pn:in_ck="-3941320676471061275" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1392178012">
+    <transform xil_pn:end_ts="1392724456" xil_pn:in_ck="8025955416509140303" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1392724455">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CLA_4bit.v"/>
+      <outfile xil_pn:name="CLA_4bit_tb.v"/>
+      <outfile xil_pn:name="CLA_8bit.v"/>
+      <outfile xil_pn:name="CLA_8bit_tb.v"/>
       <outfile xil_pn:name="DRAP_ALI.v"/>
       <outfile xil_pn:name="DRAP_Dmemory.v"/>
       <outfile xil_pn:name="DRAP_Dmemory_tb.v"/>
@@ -191,29 +200,20 @@
       <outfile xil_pn:name="tb_mux2_1.v"/>
       <outfile xil_pn:name="tb_mux4_1.v"/>
     </transform>
-    <transform xil_pn:end_ts="1392178028" xil_pn:in_ck="-3941320676471061275" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3801010733172769221" xil_pn:start_ts="1392178013">
+    <transform xil_pn:end_ts="1392724474" xil_pn:in_ck="8025955416509140303" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4763116326278939739" xil_pn:start_ts="1392724456">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="alu_24bit_tb_beh.prj"/>
-      <outfile xil_pn:name="alu_24bit_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="CLA_8bit_tb_beh.prj"/>
+      <outfile xil_pn:name="CLA_8bit_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1392178035" xil_pn:in_ck="-5496510597099444837" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8764325500717351896" xil_pn:start_ts="1392178028">
+    <transform xil_pn:end_ts="1392724479" xil_pn:in_ck="-406446994029161109" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4003550403661998120" xil_pn:start_ts="1392724474">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="alu_24bit_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="CLA_8bit_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1390962047" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1390962047">
       <status xil_pn:value="SuccessfullyRun"/>

@@ -55,6 +55,7 @@ binv = 0;
 less = 0;
 sel1 = 0;
 sel0 = 0;
+
 // Wait 100 ns for global reset to finish
 #100;
 // Add stimulus here
