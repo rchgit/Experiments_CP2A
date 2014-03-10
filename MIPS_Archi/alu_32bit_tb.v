@@ -64,7 +64,16 @@ module alu_32bit_tb;
 		#100;
         
 		// Add stimulus here
-
+		a = 32'h00000001; b = 32'h00000003; cin = 0; binv = 0; less = 0; sel1 = 0; sel0 = 0; #50;
+		a = 32'haaaaaaaa; b = 32'h55555555; cin = 0; binv = 0; less = 0; sel1 = 0; sel0 = 0; #50;
+		sel1 = 0; sel0 = 1;  #50; 
+		cin = 1; sel1 = 1; sel0 = 0; #50; 
+		cin = 0; sel1 = 1; sel0 = 0; #50; 
+		sel1 = 1; sel0 = 1; #50;
+		b = 32'haaaaaaaa; a = 32'h55555555; cin = 0; binv = 0; less = 0; sel1 = 1; sel0 = 1; #50;
+		b = 32'haaaaaaaa; a = 32'h55555555; cin = 0; binv = 1; less = 0; sel1 = 1; sel0 = 0; #50;
+		//a = 32'haaaaaaaa; b = 32'h55555555; cin = 0; binv = 1; less = 0; sel1 = 1; sel0 = 0; #50;
+		a = 32'h00000010; b = 32'h00000001; #50;
 	end
       
 endmodule

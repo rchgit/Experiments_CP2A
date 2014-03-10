@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/CLA_16bit.xst" -ofn "C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/CLA_16bit.syr" 

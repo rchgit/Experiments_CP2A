@@ -1,0 +1,397 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.39 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.39 secs
+ 
+--> Reading design: alu_32bit_lac.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "alu_32bit_lac.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "alu_32bit_lac"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : alu_32bit_lac
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "LAC_16bit.v" in library work
+Compiling verilog file "LAC_32bit.v" in library work
+Module <LAC_16bit> compiled
+Compiling verilog file "alu_32bit_lac.v" in library work
+Module <LAC_32bit> compiled
+Module <alu_32bit_lac> compiled
+No errors in compilation
+Analysis of file <"alu_32bit_lac.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <alu_32bit_lac> in library <work>.
+
+Analyzing hierarchy for module <LAC_32bit> in library <work>.
+
+Analyzing hierarchy for module <LAC_16bit> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <alu_32bit_lac>.
+Module <alu_32bit_lac> is correct for synthesis.
+ 
+Analyzing module <LAC_32bit> in library <work>.
+Module <LAC_32bit> is correct for synthesis.
+ 
+Analyzing module <LAC_16bit> in library <work>.
+Module <LAC_16bit> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <LAC_16bit>.
+    Related source file is "LAC_16bit.v".
+    Found 1-bit xor2 for signal <s<0>>.
+    Found 16-bit xor2 for signal <p>.
+    Found 1-bit xor2 for signal <s_15_1$xor0001> created at line 34.
+    Found 1-bit xor2 for signal <s_15_1$xor0002> created at line 34.
+    Found 1-bit xor2 for signal <s_15_1$xor0003> created at line 34.
+    Found 1-bit xor2 for signal <s_15_1$xor0004> created at line 34.
+    Found 1-bit xor2 for signal <s_15_1$xor0005> created at line 34.
+    Found 1-bit xor2 for signal <s_15_1$xor0006> created at line 34.
+    Found 1-bit xor2 for signal <s_15_1$xor0007> created at line 34.
+    Found 1-bit xor2 for signal <s_15_1$xor0008> created at line 34.
+    Found 1-bit xor2 for signal <s_15_1$xor0009> created at line 34.
+    Found 1-bit xor2 for signal <s_15_1$xor0010> created at line 34.
+    Found 1-bit xor2 for signal <s_15_1$xor0011> created at line 34.
+    Found 1-bit xor2 for signal <s_15_1$xor0012> created at line 34.
+    Found 1-bit xor2 for signal <s_15_1$xor0013> created at line 34.
+    Found 1-bit xor2 for signal <s_15_1$xor0014> created at line 34.
+    Found 1-bit xor2 for signal <s_15_1$xor0015> created at line 34.
+Unit <LAC_16bit> synthesized.
+
+
+Synthesizing Unit <LAC_32bit>.
+    Related source file is "LAC_32bit.v".
+Unit <LAC_32bit> synthesized.
+
+
+Synthesizing Unit <alu_32bit_lac>.
+    Related source file is "alu_32bit_lac.v".
+WARNING:Xst:647 - Input <less> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit 4-to-1 multiplexer for signal <$varindex0000> created at line 35.
+    Found 32-bit adder for signal <btemp$addsub0000> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <alu_32bit_lac> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+# Xors                                                 : 34
+ 1-bit xor2                                            : 32
+ 16-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+# Xors                                                 : 34
+ 1-bit xor2                                            : 32
+ 16-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <alu_32bit_lac> ...
+
+Optimizing unit <LAC_16bit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block alu_32bit_lac, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : alu_32bit_lac.ngr
+Top Level Output File Name         : alu_32bit_lac
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 133
+
+Cell Usage :
+# BELS                             : 323
+#      GND                         : 1
+#      INV                         : 31
+#      LUT1                        : 1
+#      LUT2                        : 32
+#      LUT3                        : 94
+#      LUT4                        : 35
+#      MUXCY                       : 63
+#      MUXF5                       : 33
+#      VCC                         : 1
+#      XORCY                       : 32
+# IO Buffers                       : 101
+#      IBUF                        : 68
+#      OBUF                        : 33
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      101  out of   4656     2%  
+ Number of 4 input LUTs:                193  out of   9312     2%  
+ Number of IOs:                         133
+ Number of bonded IOBs:                 101  out of    232    43%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 47.432ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 8609 / 33
+-------------------------------------------------------------------------
+Delay:               47.432ns (Levels of Logic = 38)
+  Source:            b<0> (PAD)
+  Destination:       result<31> (PAD)
+
+  Data Path: b<0> to result<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.218   0.844  b_0_IBUF (b_0_IBUF)
+     LUT1:I0->O            1   0.704   0.000  Madd_btemp_addsub0000_cy<0>_rt (Madd_btemp_addsub0000_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  Madd_btemp_addsub0000_cy<0> (Madd_btemp_addsub0000_cy<0>)
+     XORCY:CI->O           1   0.804   0.455  Madd_btemp_addsub0000_xor<1> (btemp_addsub0000<1>)
+     LUT3:I2->O            2   0.704   0.622  btemp<1>1 (btemp<1>)
+     LUT3:I0->O            2   0.704   0.526  M1/M1/c_1_or00001 (M1/M1/c<1>)
+     LUT3:I1->O            2   0.704   0.526  M1/M1/c_2_or00001 (M1/M1/c<2>)
+     LUT3:I1->O            2   0.704   0.526  M1/M1/c_3_or00001 (M1/M1/c<3>)
+     LUT3:I1->O            2   0.704   0.526  M1/M1/c_4_or00001 (M1/M1/c<4>)
+     LUT3:I1->O            2   0.704   0.526  M1/M1/c_5_or00001 (M1/M1/c<5>)
+     LUT3:I1->O            2   0.704   0.526  M1/M1/c_6_or00001 (M1/M1/c<6>)
+     LUT3:I1->O            2   0.704   0.526  M1/M1/c_7_or00001 (M1/M1/c<7>)
+     LUT3:I1->O            2   0.704   0.526  M1/M1/c_8_or00001 (M1/M1/c<8>)
+     LUT3:I1->O            2   0.704   0.526  M1/M1/c_9_or00001 (M1/M1/c<9>)
+     LUT3:I1->O            2   0.704   0.526  M1/M1/c_10_or00001 (M1/M1/c<10>)
+     LUT3:I1->O            2   0.704   0.526  M1/M1/c_11_or00001 (M1/M1/c<11>)
+     LUT3:I1->O            2   0.704   0.526  M1/M1/c_12_or00001 (M1/M1/c<12>)
+     LUT3:I1->O            2   0.704   0.526  M1/M1/c_13_or00001 (M1/M1/c<13>)
+     LUT3:I1->O            2   0.704   0.526  M1/M1/c_14_or00001 (M1/M1/c<14>)
+     LUT3:I1->O            2   0.704   0.526  M1/M1/c_15_or00001 (M1/c0)
+     LUT3:I1->O            2   0.704   0.526  M1/M2/c_0_or00001 (M1/M2/c<0>)
+     LUT3:I1->O            2   0.704   0.526  M1/M2/c_1_or00001 (M1/M2/c<1>)
+     LUT3:I1->O            2   0.704   0.526  M1/M2/c_2_or00001 (M1/M2/c<2>)
+     LUT3:I1->O            2   0.704   0.526  M1/M2/c_3_or00001 (M1/M2/c<3>)
+     LUT3:I1->O            2   0.704   0.526  M1/M2/c_4_or00001 (M1/M2/c<4>)
+     LUT3:I1->O            2   0.704   0.526  M1/M2/c_5_or00001 (M1/M2/c<5>)
+     LUT3:I1->O            2   0.704   0.526  M1/M2/c_6_or00001 (M1/M2/c<6>)
+     LUT3:I1->O            2   0.704   0.526  M1/M2/c_7_or00001 (M1/M2/c<7>)
+     LUT3:I1->O            2   0.704   0.526  M1/M2/c_8_or00001 (M1/M2/c<8>)
+     LUT3:I1->O            2   0.704   0.526  M1/M2/c_9_or00001 (M1/M2/c<9>)
+     LUT3:I1->O            2   0.704   0.526  M1/M2/c_10_or00001 (M1/M2/c<10>)
+     LUT3:I1->O            2   0.704   0.526  M1/M2/c_11_or00001 (M1/M2/c<11>)
+     LUT3:I1->O            2   0.704   0.526  M1/M2/c_12_or00001 (M1/M2/c<12>)
+     LUT3:I1->O            2   0.704   0.526  M1/M2/c_13_or00001 (M1/M2/c<13>)
+     LUT3:I1->O            2   0.704   0.526  M1/M2/c_14_or00001 (M1/M2/c<14>)
+     LUT4:I1->O            1   0.704   0.000  Mmux__varindex000048_G (N219)
+     MUXF5:I1->O           1   0.321   0.420  Mmux__varindex000048 (result_31_OBUF)
+     OBUF:I->O                 3.272          result_31_OBUF (result<31>)
+    ----------------------------------------
+    Total                     47.432ns (29.311ns logic, 18.121ns route)
+                                       (61.8% logic, 38.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 24.56 secs
+ 
+--> 
+
+Total memory usage is 317904 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

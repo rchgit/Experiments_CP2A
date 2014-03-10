@@ -32,15 +32,11 @@ module CLA_8bit_tb;
 	// Outputs
 	wire [7:0] S;
 	wire Cout;
-	wire PG;
-	wire GG;
 
 	// Instantiate the Unit Under Test (UUT)
 	CLA_8bit uut (
 		.S(S), 
-		.Cout(Cout), 
-		.PG(PG), 
-		.GG(GG), 
+		.Cout(Cout),  
 		.A(A), 
 		.B(B), 
 		.Cin(Cin)

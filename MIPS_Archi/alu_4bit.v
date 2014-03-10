@@ -22,8 +22,9 @@ module alu_4bit (
 output [3:0] result,
 output co,
 input [3:0] a, b,
-input cin, sel1, sel0, binv,
-input [3:0] less);
+input cin, binv,  
+input [3:0] less,
+input sel1, sel0);
 wire cin1, cin2, cin3;
 alu_1bit M1 ( result[0], cin1, a[0], b[0], cin, binv, less[0], sel1, sel0);
 alu_1bit M2 ( result[1], cin2, a[1], b[1], cin1, binv, less[1], sel1, sel0);

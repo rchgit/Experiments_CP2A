@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module CLA_8bit(
 	 output [7:0] S,
-    output Cout,PG,GG,
+    output Cout,
 	 // PG and GG = Propagate and generate group carry
     input [7:0] A,B,
     input Cin

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/alu_32bit.xst" -ofn "C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/alu_32bit.syr" 
+xst -intstyle ise -ifn "C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/alu_32bit.xst" -ofn "C:/Users/Reich/Documents/GitHub/Experiments_CP2A/MIPS_Archi/alu_32bit.syr" 
